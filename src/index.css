@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -97,5 +98,15 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Poppins', sans-serif;
   }
+}
+
+/* Custom animations and transitions */
+.hover-scale {
+  @apply transition-transform duration-200 hover:scale-105;
+}
+
+.doctor-card:hover .social-overlay {
+  @apply opacity-100;
 }
